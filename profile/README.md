@@ -37,3 +37,7 @@ MIT-licensed like Redox itself.
 
 Issues, ideas and pull requests are welcome, especially from people with a
 Pi 3, a Zero 2 W and a serial adapter on their desk.
+
+Idea in progress: an [AI challenge](https://github.com/redox-rpi/redox-rpi/blob/main/docs/ai-challenge.md)
+to port an OS to the Pi (draft, comments welcome in
+[Discussions](https://github.com/redox-rpi/redox-rpi/discussions)).
