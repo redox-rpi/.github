@@ -12,7 +12,8 @@ family, so one kernel and one driver set cover them.
 | Boots in QEMU's emulated Pi 3 (`raspi3b`) to a root shell | ✅ with a devicetree fix from this project |
 | Userspace programs in today's daily image | 🟡 upstream regression, being tracked |
 | All 4 CPU cores (spin-table, BCM2836 IPIs) | ✅ in QEMU |
-| Real Pi 3 hardware (serial console) | ⏳ next |
+| Real Pi 3B+: network boot to the login prompt | ✅ 2026-10-25 |
+| Login on real hardware (serial console, USB keyboard) | ⏳ next |
 | Zero 2 W board variant | ⏳ planned |
 | Ethernet (DWC2 USB host, Pi 3 onboard and Zero 2 W HATs) | ⏳ planned |
 
