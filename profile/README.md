@@ -17,6 +17,7 @@ family, so one kernel and one driver set cover them.
 | Zero 2 W board variant | ⏳ planned |
 | Ethernet on the Pi 3B+ (own DWC2 USB and LAN7800 drivers) | ✅ 2026-10-26 |
 | Remote login over the LAN on the Pi 3B+ | ✅ 2026-10-26 |
+| USB keyboard on the Pi 3B+ | ✅ 2026-10-26 |
 | Ethernet on the Zero 2 W HAT (RTL8152) | ⏳ next |
 
 Details: [status and findings](https://github.com/redox-rpi/redox-rpi/blob/main/docs/status.md) ·
