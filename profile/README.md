@@ -15,7 +15,8 @@ family, so one kernel and one driver set cover them.
 | Real Pi 3B+: network boot to the login prompt | ✅ 2026-10-25 |
 | Login on real hardware (serial console, USB keyboard) | ⏳ next |
 | Zero 2 W board variant | ⏳ planned |
-| Ethernet (DWC2 USB host, Pi 3 onboard and Zero 2 W HATs) | ⏳ planned |
+| Ethernet on the Pi 3B+ (own DWC2 USB and LAN7800 drivers) | ✅ 2026-10-26 |
+| Ethernet on the Zero 2 W HAT (RTL8152) | ⏳ next |
 
 Details: [status and findings](https://github.com/redox-rpi/redox-rpi/blob/main/docs/status.md) ·
 [roadmap](https://github.com/redox-rpi/redox-rpi/blob/main/ROADMAP.md)
