@@ -7,18 +7,24 @@ family, so one kernel and one driver set cover them.
 
 ### Status
 
-Latest release: [v0.2.0](https://github.com/redox-rpi/redox-rpi/releases/latest),
-experimental (alpha), not for daily use.
+Latest release: [v0.3.0](https://github.com/redox-rpi/redox-rpi/releases/latest),
+experimental (alpha), not for daily use. v0.2.0 added the hardware; v0.3.0
+makes it dependable. Next: [v0.4.0](https://github.com/redox-rpi/redox-rpi/milestone/3),
+boot and storage.
 
 | | State |
 |---|---|
 | Real Pi 3B+: all 4 cores, boot from SD card or over the network | ✅ |
-| USB keyboard and HDMI console (own DWC2 USB driver) | ✅ plugged in before boot; hotplug planned |
+| Programs start reliably (0 of 3000 starts failed on a real Pi) | ✅ |
+| USB keyboard and HDMI console (own DWC2 USB driver), hotplug | ✅ |
 | Ethernet: LAN7800 on the Pi 3B+, RTL8152/RTL8153 on the Zero 2 W HAT | ✅ |
+| Faster SD card driver (sdhost, about 7.5 MB/s) | ✅ |
+| CPU clock follows the load (600 to 1400 MHz) | ✅ |
 | Time over NTP at boot | ✅ |
+| GPIO, I2C and SPI on the pin header | ✅ first versions |
 | Zero 2 W | ✅ boots the Pi 3B+ image |
-| Random start crashes | 🟡 main cause fixed, one rare crash left |
-| Faster SD card driver (sdhost), full CPU speed | 🟡 planned for v0.3.0 |
+| Boot straight from the firmware, image that grows to the card | 🟡 planned for v0.4.0 |
+| Wi-Fi, IPv6 | 🟡 planned for v0.6.0 |
 
 Details: [roadmap](https://github.com/redox-rpi/redox-rpi/blob/main/ROADMAP.md) ·
 [topics](https://github.com/redox-rpi/redox-rpi/blob/main/docs/topics/README.md) ·
@@ -50,7 +56,7 @@ also for the other repositories here (such as
   works on it. Tasks without hardware: [needs:nothing](https://github.com/redox-rpi/redox-rpi/issues?q=is%3Aopen+label%3Aneeds%3Anothing),
   in QEMU: [needs:qemu](https://github.com/redox-rpi/redox-rpi/issues?q=is%3Aopen+label%3Aneeds%3Aqemu).
 - **Releases** are milestones, for example
-  [v0.3.0](https://github.com/redox-rpi/redox-rpi/milestone/1).
+  [v0.4.0](https://github.com/redox-rpi/redox-rpi/milestone/3).
 - **Topic pages** in [docs/topics/](https://github.com/redox-rpi/redox-rpi/blob/main/docs/topics/README.md)
   say what works, what is in progress and what comes next.
 - **The same rules for everyone**, people and AI agents: say in the issue
