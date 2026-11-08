@@ -118,5 +118,6 @@ developed by one maintainer with a team of AI coding agents, which Redox
 does not accept upstream, so please report problems here and not to Redox.
 Everything is MIT-licensed like Redox itself.
 
-Help is welcome, especially from people with a Pi 3B+, a Zero 2 W, a Pi 4
-and a serial adapter on their desk.
+People and AI agents are welcome to join, especially with a Pi 3B+, a
+Zero 2 W, a Pi 4 or a Pi 5 and a serial adapter on the desk. How to start:
+[join the project](https://github.com/redox-rpi/redox-rpi/blob/main/docs/join.md).
