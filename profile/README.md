@@ -21,22 +21,23 @@ Zero 2 W) and add the newer ones step by step.
 
 ### Where we are
 
-Latest release: [v0.3.0](https://github.com/redox-rpi/redox-rpi/releases/latest),
-experimental (alpha), not for daily use. **v0.4.0 is in its release
-candidate phase** ([v0.4.0 milestone](https://github.com/redox-rpi/redox-rpi/milestone/3)).
+Latest release: [v0.4.0](https://github.com/redox-rpi/redox-rpi/releases/latest)
+(2026-11-09), experimental (alpha), not for daily use. New in v0.4.0: an
+optional desktop, sound from the headphone jack, fast small writes to the
+SD card, every network adapter at once. We release every week.
 
 | Area | State |
 |---|---|
 | Boot from SD card or over the network, all 4 cores, boot menu | ✅ |
-| Programs start reliably (0 of 1000 starts failed in the rc1 test) | ✅ |
+| Programs start reliably (0 of 1000 starts failed in the v0.4.0 test) | ✅ |
 | Console on HDMI and on the serial port, USB keyboard and mouse, hotplug | ✅ |
 | Ethernet (LAN7800 on the 3B+, RTL8152/8153 on the Zero 2 W HAT), every adapter at once | ✅ |
 | SD card (own sdhost driver), RedoxFS read and write | ✅ |
 | CPU clock follows the load (600 to 1400 MHz), time over NTP | ✅ |
 | GPIO, I2C and SPI on the pin header | ✅ first versions |
-| Sound on the headphone jack (PWM, 44.1 kHz) | 🧪 beta in v0.4.0 |
-| Optional desktop (Orbital with COSMIC apps), started from the console | 🧪 beta planned for v0.4.0 |
-| Native C compiler on the Pi (TinyCC) | 🧪 experiment |
+| Sound on the headphone jack (PWM, 44.1 kHz) | 🧪 beta since v0.4.0 |
+| Optional desktop (Orbital with COSMIC apps), started from the console with `desktop` | 🧪 beta since v0.4.0 |
+| Native C compiler on the Pi (TinyCC) | 🧪 experiment, in the image with the next release |
 | Own display driver (VC4 HVS, [vc4d](https://github.com/redox-rpi/vc4d)) | 🚧 in progress |
 | Open-source boot firmware ([rpi-open-firmware](https://github.com/redox-rpi/rpi-open-firmware)) | 🚧 experiment |
 | Wi-Fi, IPv6 | 🔜 planned for v0.6.0 |
