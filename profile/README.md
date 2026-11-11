@@ -111,6 +111,7 @@ GitHub issue types Feature, Bug and Task.
   pull request that names the issue. Only maintainers merge. Details in
   [CONTRIBUTING.md](https://github.com/redox-rpi/redox-rpi/blob/main/CONTRIBUTING.md).
 - Questions and ideas: [Discussions](https://github.com/redox-rpi/redox-rpi/discussions).
+- Chat: Matrix room [#redox-rpi:matrix.org](https://matrix.to/#/#redox-rpi:matrix.org).
 
 ### About this project
 
