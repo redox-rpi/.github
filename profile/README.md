@@ -69,14 +69,50 @@ Everything above the firmware is open source. We follow upstream Redox:
 our changes are small patches on top of a pinned upstream version
 (`upstream.lock`), so every image can be rebuilt exactly.
 
+### The VideoCore IV part
+
+Besides the four ARM cores, every Pi 3B+ and Zero 2 W has a VideoCore IV
+(VC4). It has two halves:
+- the **VPU**, a separate processor that starts first and runs the boot
+  firmware (`bootcode.bin`, `start.elf`)
+- the **GPU** with the display pipeline (HVS) and 3D
+
+The Raspberry Pi firmware for it is closed. We work on it from both sides:
+
+- **ARM side, the display:** [vc4d](https://github.com/redox-rpi/vc4d) is a
+  Redox driver that drives the HVS and later 3D directly, instead of the
+  firmware's simple framebuffer. It is ported from Linux vc4.
+- **VPU side, the firmware:**
+  [rpi-open-firmware](https://github.com/redox-rpi/rpi-open-firmware) is an
+  open-source `bootcode.bin` that brings up the RAM and loads the next stage.
+  The experiment boots on the 3B+.
+- **Tools for the VPU:**
+  - [tinycc](https://github.com/redox-rpi/tinycc) is our TinyCC with a VC4
+    backend, so the firmware can be built with a small compiler of our own,
+    without the old vc4-elf GCC. The same TinyCC is the C compiler on the Pi.
+  - [resim](https://github.com/redox-rpi/resim) is a VC4 simulator, so
+    compiler and firmware can be tested without a Pi. A weekly run compiles
+    1,000 random programs (csmith) with both compilers and compares the
+    results in the simulator.
+  - [vc4-toolchain](https://github.com/redox-rpi/vc4-toolchain) pins every
+    one of these tools to an exact commit and has the scripts that build and
+    test them.
+
+All of this is experimental. Releases still boot with the Raspberry Pi
+firmware.
+
 ### Repositories
 
 | Repository | What |
 |---|---|
 | [redox-rpi](https://github.com/redox-rpi/redox-rpi) | build, patches against upstream Redox, image configuration, releases, docs |
 | [relibc](https://github.com/redox-rpi/relibc) | our fork of Redox's C library with the aarch64 fixes |
-| [vc4d](https://github.com/redox-rpi/vc4d) | display driver for the VideoCore IV (in progress) |
-| [rpi-open-firmware](https://github.com/redox-rpi/rpi-open-firmware) | open-source boot firmware (experiment) |
+| [pi-tests](https://github.com/redox-rpi/pi-tests) | test queue, test reports and evidence from the real Pis |
+| [vc4d](https://github.com/redox-rpi/vc4d) | display driver for the VideoCore IV (in progress, GPL-2.0) |
+| [rpi-open-firmware](https://github.com/redox-rpi/rpi-open-firmware) | open-source boot firmware for the VPU (experiment) |
+| [tinycc](https://github.com/redox-rpi/tinycc) | TinyCC for Redox on the Pi, with a VC4 backend (LGPL-2.1) |
+| [resim](https://github.com/redox-rpi/resim) | VideoCore IV simulator for testing without a Pi |
+| [vc4-toolchain](https://github.com/redox-rpi/vc4-toolchain) | pinned versions and build and test scripts of the VC4 tools |
 
 ### Try it
 
@@ -118,7 +154,8 @@ GitHub issue types Feature, Bug and Task.
 This is an **unofficial fork** and not part of the Redox OS project. It is
 developed by one maintainer with a team of AI coding agents, which Redox
 does not accept upstream, so please report problems here and not to Redox.
-Everything is MIT-licensed like Redox itself.
+Our own code is MIT-licensed like Redox itself. Forks keep the licence of
+their original: vc4d is GPL-2.0 (from Linux), tinycc LGPL-2.1.
 
 People and AI agents are welcome to join, especially with a Pi 3B+, a
 Zero 2 W, a Pi 4 or a Pi 5 and a serial adapter on the desk. How to start:
