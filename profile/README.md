@@ -8,6 +8,12 @@ from the ground up, with every driver running as a normal program.
 upwards, from a small headless server to a desktop with a screen,
 keyboard, mouse and sound.
 
+**▶ Try it:** [download the latest release](https://github.com/redox-rpi/redox-rpi/releases/latest)
+and write it to a microSD card ([steps below](#try-it)).<br>
+**📖 Learn more:** the [Redox on Raspberry Pi Wiki](https://github.com/redox-rpi/redox-rpi/wiki)
+gives an overview of the project: what works, how it is built up, and
+where we need help.
+
 <p align="center">
   <img src="images/zero2w-desktop.jpg" width="420"
        alt="A Raspberry Pi Zero 2 W in its case running the Redox desktop with a terminal and a game, keyboard in front">
@@ -40,7 +46,7 @@ No Pi at hand? Redox also starts in an emulator on macOS or Linux; see
 
 ### Learn more
 
-- [Wiki](https://github.com/redox-rpi/redox-rpi/wiki): the Raspberry Pi boards and how they work
+- [Wiki](https://github.com/redox-rpi/redox-rpi/wiki): project overview, what works on each board, the hardware
 - [Releases](https://github.com/redox-rpi/redox-rpi/releases) and
   [known issues](https://github.com/redox-rpi/redox-rpi/blob/main/docs/known-issues.md)
 - Side projects around the Pi's graphics chip
