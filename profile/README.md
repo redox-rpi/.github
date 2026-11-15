@@ -47,6 +47,7 @@ No Pi at hand? Redox also starts in an emulator on macOS or Linux; see
 ### Learn more
 
 - [Wiki](https://github.com/redox-rpi/redox-rpi/wiki): project overview, what works on each board, the hardware
+- [Dashboard](https://github.com/orgs/redox-rpi/projects/2): open feature requests and bugs by topic
 - [Releases](https://github.com/redox-rpi/redox-rpi/releases) and
   [known issues](https://github.com/redox-rpi/redox-rpi/blob/main/docs/known-issues.md)
 - Side projects around the Pi's graphics chip
