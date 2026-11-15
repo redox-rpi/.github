@@ -8,6 +8,12 @@ from the ground up, with every driver running as a normal program.
 upwards, from a small headless server to a desktop with a screen,
 keyboard, mouse and sound.
 
+<p align="center">
+  <img src="images/pi3b-desktop.jpg" width="420"
+       alt="A Raspberry Pi 3B+ running the Redox desktop with a terminal and a game, keyboard in front">
+  <br><em>Redox on a Raspberry Pi 3B+: the optional desktop, a terminal and a game with sound.</em>
+</p>
+
 ### What works today
 
 A Raspberry Pi 3B+ or Zero 2 W boots Redox from an SD card or over the
