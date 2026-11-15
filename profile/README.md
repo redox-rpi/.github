@@ -9,9 +9,9 @@ upwards, from a small headless server to a desktop with a screen,
 keyboard, mouse and sound.
 
 <p align="center">
-  <img src="images/pi3b-desktop.jpg" width="420"
-       alt="A Raspberry Pi 3B+ running the Redox desktop with a terminal and a game, keyboard in front">
-  <br><em>Redox on a Raspberry Pi 3B+: the optional desktop, a terminal and a game with sound.</em>
+  <img src="images/zero2w-desktop.jpg" width="420"
+       alt="A Raspberry Pi Zero 2 W in its case running the Redox desktop with a terminal and a game, keyboard in front">
+  <br><em>Redox on a Raspberry Pi Zero 2 W: the optional desktop, a terminal and a game.</em>
 </p>
 
 ### What works today
