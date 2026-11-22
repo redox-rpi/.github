@@ -25,13 +25,14 @@ where we need help.
 A Raspberry Pi 3B+ or Zero 2 W boots Redox from an SD card or over the
 network. You get a console on the screen and over the serial port, USB
 keyboard and mouse, wired network, the correct time from the internet,
-sound from the headphone jack, the pin header (GPIO, I2C, SPI), and an
-optional desktop. A small C compiler runs on the Pi itself.
+sound over HDMI, the pin header (GPIO, I2C, SPI), and an optional
+desktop. The SD card starts Redox directly and runs it from memory. A small C compiler runs on the Pi itself.
 
 It is still experimental: fun to try and to work on, not for daily use.
 We release a new version every week.
 
-**Next:** sound over HDMI, Wi-Fi, the Pi 4 and Pi 400, later the Pi 5.
+**Next:** Wi-Fi, choosing HDMI or the headphone jack for sound, the Pi 4
+and Pi 400, later the Pi 5.
 
 ### Try it
 
