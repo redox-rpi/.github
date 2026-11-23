@@ -1,16 +1,18 @@
 ---
 name: Epic
-about: A product goal that spans several milestones (approved by the maintainer)
+about: A feature area that collects all its present and future Features (approved by the maintainer)
+title: "Epic: "
 type: Epic
 ---
 
 <!-- Rules: https://github.com/redox-rpi/redox-rpi/blob/main/docs/process/pmp.md#issue-types-and-epics
-     No code and no milestone here. Attach Features, Tasks and Bugs as sub-issues; they keep their release milestones. -->
+     One epic per feature area, not per component. No code and no milestone here.
+     Attach Features (and Tasks, Bugs) as sub-issues; they keep their release milestones. Docs link this epic. -->
 
-**Goal:**
+**Area:** what this feature area covers
 
 **Out of scope:**
 
 **Decision record:** #
 
-**Done when:**
+**Closed when:** the project decides the area is complete, or the maintainer drops it.
