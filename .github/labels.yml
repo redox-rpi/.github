@@ -1,70 +1,70 @@
 # The one label list of the redox-rpi organisation (RFC 0002, "Labels").
-# scripts/sync-labels.sh creates and updates these labels in every
+# scripts/sync-labels.py creates and updates these labels in every
 # repository; it never deletes a label. Change labels here, not in the
 # repositories. Rules for using them: redox-rpi docs/process/pmp.md.
 
 # Every repository
 shared:
-  - {name: "needs:pi",         color: e99695, description: "Needs a Raspberry Pi 3B+"}
-  - {name: "needs:zero2w",     color: e99695, description: "Needs a Raspberry Pi Zero 2 W"}
-  - {name: "needs:qemu",       color: c2e0c6, description: "Runs in QEMU on a Linux build host"}
-  - {name: "needs:nothing",    color: c2e0c6, description: "No hardware needed (build, simulator, docs)"}
-  - {name: "needs:person",     color: e99695, description: "Needs a person: watching a screen, swapping a card"}
-  - {name: "in-progress",      color: fbca04, description: "Someone is working on it"}
-  - {name: "merge-next",       color: 0e8a16, description: "Project lead: ready to merge now (green, no conflict, Pi test passed, nothing before it open)"}
-  - {name: "upstream",         color: 5319e7, description: "Root cause is in upstream code; a pointer note for a report there"}
-  - {name: "waiting-upstream", color: fbca04, description: "Fixed in our fork; kept open until upstream has it"}
-  - {name: "external",         color: d93f0b, description: "Pull request from outside the organisation (PMP: pull requests from outside)"}
-  - {name: "severity:S1",      color: b60205, description: "Blocks boot or a release, or loses data"}
-  - {name: "severity:S2",      color: d93f0b, description: "Feature broken, a workaround exists"}
-  - {name: "severity:S3",      color: fbca04, description: "Minor or cosmetic"}
-  - {name: "good first issue", color: 7057ff, description: "Good for newcomers"}
+  - {name: "needs:pi",         color: "e99695", description: "Needs a Raspberry Pi 3B+"}
+  - {name: "needs:zero2w",     color: "e99695", description: "Needs a Raspberry Pi Zero 2 W"}
+  - {name: "needs:qemu",       color: "c2e0c6", description: "Runs in QEMU on a Linux build host"}
+  - {name: "needs:nothing",    color: "c2e0c6", description: "No hardware needed (build, simulator, docs)"}
+  - {name: "needs:person",     color: "e99695", description: "Needs a person: watching a screen, swapping a card"}
+  - {name: "in-progress",      color: "fbca04", description: "Someone is working on it"}
+  - {name: "merge-next",       color: "0e8a16", description: "Project lead: ready to merge now (green, no conflict, Pi test passed, nothing before it open)"}
+  - {name: "upstream",         color: "5319e7", description: "Root cause is in upstream code; a pointer note for a report there"}
+  - {name: "waiting-upstream", color: "fbca04", description: "Fixed in our fork; kept open until upstream has it"}
+  - {name: "external",         color: "d93f0b", description: "Pull request from outside the organisation (PMP: pull requests from outside)"}
+  - {name: "severity:S1",      color: "b60205", description: "Blocks boot or a release, or loses data"}
+  - {name: "severity:S2",      color: "d93f0b", description: "Feature broken, a workaround exists"}
+  - {name: "severity:S3",      color: "fbca04", description: "Minor or cosmetic"}
+  - {name: "good first issue", color: "7057ff", description: "Good for newcomers"}
   - {name: "help wanted",      color: "008672", description: "Extra attention is needed"}
-  - {name: "duplicate",        color: cfd3d7, description: "This issue or pull request already exists"}
-  - {name: "wontfix",          color: ffffff, description: "This will not be worked on"}
+  - {name: "duplicate",        color: "cfd3d7", description: "This issue or pull request already exists"}
+  - {name: "wontfix",          color: "ffffff", description: "This will not be worked on"}
 
 # Topics: only in redox-rpi and pi-tests; elsewhere the repository is the topic.
 # One per row of the PMP table "Topic owners".
 topics:
-  - {name: "topic:assistant",    color: 1d76db, description: "Local LLM assistant on the Pi"}
-  - {name: "topic:audio",        color: 1d76db, description: "Sound: PWM jack, I2S, HDMI audio"}
-  - {name: "topic:boards",       color: c5def5, description: "More boards: Pi 4 family, Pi 5, test lab"}
-  - {name: "topic:boot",         color: 1d76db, description: "Boot chain: firmware, U-Boot, bootloader, network boot"}
-  - {name: "topic:ci",           color: 1d76db, description: "CI and automated tests"}
-  - {name: "topic:dma",          color: 1d76db, description: "Timers and DMA"}
-  - {name: "topic:firmware",     color: 1d76db, description: "rpi-firmwared, clocks, power through the VideoCore firmware"}
-  - {name: "topic:gpio",         color: 0e8a16, description: "GPIO, I2C and other Pi peripherals"}
-  - {name: "topic:graphics",     color: 1d76db, description: "Display and GPU"}
-  - {name: "topic:network",      color: 1d76db, description: "Ethernet drivers and the network stack"}
-  - {name: "topic:process",      color: 1d76db, description: "Process rules: PMP, CONTRIBUTING, templates, labels, rulesets"}
-  - {name: "topic:quality",      color: 5319e7, description: "Test coverage, regressions, known issues"}
-  - {name: "topic:relibc",       color: 1d76db, description: "The C library relibc and its aarch64 code"}
-  - {name: "topic:sdcard",       color: 1d76db, description: "SD card drivers and RedoxFS on the card"}
-  - {name: "topic:smarthome",    color: 1d76db, description: "MQTT and smart-home services"}
-  - {name: "topic:stability",    color: 1d76db, description: "Start crashes, kernel and signal bugs"}
-  - {name: "topic:tcc",          color: 1d76db, description: "Native C compiler (TinyCC) on the Pi"}
-  - {name: "topic:time",         color: 1d76db, description: "Clock, NTP and timesync"}
-  - {name: "topic:usb",          color: 1d76db, description: "dwc2d USB host driver, hubs, keyboard"}
-  - {name: "topic:verification", color: 5319e7, description: "Verification and validation: test standards, Pi tests, regression set, special tests"}
-  - {name: "topic:zero2w",       color: 1d76db, description: "Raspberry Pi Zero 2 W"}
+  - {name: "topic:assistant",    color: "1d76db", description: "Local LLM assistant on the Pi"}
+  - {name: "topic:audio",        color: "1d76db", description: "Sound: PWM jack, I2S, HDMI audio"}
+  - {name: "topic:boards",       color: "c5def5", description: "More boards: Pi 4 family, Pi 5, test lab"}
+  - {name: "topic:boot",         color: "1d76db", description: "Boot chain: firmware, U-Boot, bootloader, network boot"}
+  - {name: "topic:ci",           color: "1d76db", description: "CI and automated tests"}
+  - {name: "topic:dma",          color: "1d76db", description: "Timers and DMA"}
+  - {name: "topic:firmware",     color: "1d76db", description: "rpi-firmwared, clocks, power through the VideoCore firmware"}
+  - {name: "topic:gpio",         color: "0e8a16", description: "GPIO, I2C and other Pi peripherals"}
+  - {name: "topic:graphics",     color: "1d76db", description: "Display and GPU"}
+  - {name: "topic:network",      color: "1d76db", description: "Ethernet drivers and the network stack"}
+  - {name: "topic:process",      color: "1d76db", description: "Process rules: PMP, CONTRIBUTING, templates, labels, rulesets"}
+  - {name: "topic:quality",      color: "5319e7", description: "Test coverage, regressions, known issues"}
+  - {name: "topic:relibc",       color: "1d76db", description: "The C library relibc and its aarch64 code"}
+  - {name: "topic:sdcard",       color: "1d76db", description: "SD card drivers and RedoxFS on the card"}
+  - {name: "topic:smarthome",    color: "1d76db", description: "MQTT and smart-home services"}
+  - {name: "topic:stability",    color: "1d76db", description: "Start crashes, kernel and signal bugs"}
+  - {name: "topic:tcc",          color: "1d76db", description: "Native C compiler (TinyCC) on the Pi"}
+  - {name: "topic:time",         color: "1d76db", description: "Clock, NTP and timesync"}
+  - {name: "topic:usb",          color: "1d76db", description: "dwc2d USB host driver, hubs, keyboard"}
+  - {name: "topic:verification", color: "5319e7", description: "Verification and validation: test standards, Pi tests, regression set, special tests"}
+  - {name: "topic:zero2w",       color: "1d76db", description: "Raspberry Pi Zero 2 W"}
 
 # Extra labels of single repositories
 repos:
   redox-rpi:
     - topics
-    - {name: "risk",        color: b60205, description: "Something that could go wrong; reviewed weekly by the project lead"}
-    - {name: "opportunity", color: 0e8a16, description: "Something that could help the project; reviewed weekly by the project lead"}
-    - {name: "wp",          color: 5319e7, description: "Work package parent issue (WBS)"}
+    - {name: "risk",        color: "b60205", description: "Something that could go wrong; reviewed weekly by the project lead"}
+    - {name: "opportunity", color: "0e8a16", description: "Something that could help the project; reviewed weekly by the project lead"}
+    - {name: "wp",          color: "5319e7", description: "Work package parent issue (WBS)"}
   pi-tests:
     - topics
   rpi-open-firmware:
-    - {name: "area:boot",    color: 1d76db, description: "Stage 1/2 boot: bootcode.bin, loading from the SD card, boot64, armstub, ARM start"}
-    - {name: "area:build",   color: 1d76db, description: "Toolchain, Makefile, build scripts, release cards"}
-    - {name: "area:clock",   color: 1d76db, description: "PLLs, clock manager, ARM and core clocks"}
-    - {name: "area:hdmi",    color: 1d76db, description: "HDMI, HVS, pixel valve, framebuffer, boot screen"}
-    - {name: "area:mailbox", color: 1d76db, description: "Mailbox service for U-Boot and Redox (property tags)"}
-    - {name: "area:monitor", color: 1d76db, description: "Serial monitor and test builds"}
-    - {name: "area:power",   color: 1d76db, description: "Power domains, PMIC, voltages"}
-    - {name: "area:sd",      color: 1d76db, description: "SD card (SDHOST) and FAT"}
-    - {name: "area:sdram",   color: 1d76db, description: "SDRAM init and timing"}
-    - {name: "area:sim",     color: 1d76db, description: "resim simulator tests"}
+    - {name: "area:boot",    color: "1d76db", description: "Stage 1/2 boot: bootcode.bin, loading from the SD card, boot64, armstub, ARM start"}
+    - {name: "area:build",   color: "1d76db", description: "Toolchain, Makefile, build scripts, release cards"}
+    - {name: "area:clock",   color: "1d76db", description: "PLLs, clock manager, ARM and core clocks"}
+    - {name: "area:hdmi",    color: "1d76db", description: "HDMI, HVS, pixel valve, framebuffer, boot screen"}
+    - {name: "area:mailbox", color: "1d76db", description: "Mailbox service for U-Boot and Redox (property tags)"}
+    - {name: "area:monitor", color: "1d76db", description: "Serial monitor and test builds"}
+    - {name: "area:power",   color: "1d76db", description: "Power domains, PMIC, voltages"}
+    - {name: "area:sd",      color: "1d76db", description: "SD card (SDHOST) and FAT"}
+    - {name: "area:sdram",   color: "1d76db", description: "SDRAM init and timing"}
+    - {name: "area:sim",     color: "1d76db", description: "resim simulator tests"}
